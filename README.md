@@ -9,7 +9,7 @@ COMP90019 Distributed Computing Project <br>
 Supervisor: Professor Richard Sinnott <br> 
 Student Name: Yongkang Liu <br> 
 
-#### The implementation of project.
+#### The implementation of the project.
 
 ### automation
 >>Deployement of Ansible. <br>

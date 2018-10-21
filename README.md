@@ -1,14 +1,22 @@
-# COMP90019-Distributed-Computing-Project
-Master of Information Technology /n
-COMP90019 Distributed Computing Project /n
-25 Point Research Project  2018
+### COMP90019-Distributed-Computing-Project
 
-A Research of Social Media User Behaviour Using Twitter Data of Melbourne
+Master of Information Technology <br> 
+COMP90019 Distributed Computing Project <br> 
+25 Point Research Project  2018 <br> 
 
-Supervisor: professor Richard Sinnott
-Student Name: Yongkang Liu
+### A Research of Social Media User Behaviour Using Twitter Data of Melbourne <br> 
 
-# This is the implement part of the project.
-# Automation
+Supervisor: Professor Richard Sinnott <br> 
+Student Name: Yongkang Liu <br> 
+
+#### The implementation of project.
+
+### automation
+>>Deployement of Ansible. <br>
+>>Code used for analysis. <br>
+
+### result
+>>Code used to analysis data <br>
+>>Output file <br>
 
 

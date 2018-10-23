@@ -1,0 +1,8 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 curl "http://45.113.232.90/couchdbro/twitter/_design/twitter/_view/summary" -G --data-urlencode 'start_key=["melbourne",2017,1,1]' --data-urlencode 'end_key=["melbourne",2017,12,31]' --data-urlencode 'reduce=false' --data-urlencode 'include_docs=true' --user "readonly:ween7ighai9gahR6" -o /twitter.json}

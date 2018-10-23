@@ -1,0 +1,14 @@
+#Playhood that desploy the harvesting service 
+
+
+#- hosts: dbservers
+#  roles:
+#     - dbservers
+- hosts: dbservers
+  roles:
+    - dbservers
+
+- hosts: masterdbnode
+  roles:
+    - masterdbnode
+

@@ -1,0 +1,43 @@
+#this script is for deploying the main node server: harvester, analyser, aurin data upload to couchDB cluster
+
+- name: example copying file with owner and permissions
+  copy:
+    src: /Users/liuyongkang/Desktop/project/venv/code.zip
+    dest: /home/ubuntu/code.zip
+    owner: ubuntu
+    group: ubuntu
+    mode: 0644
+
+- name: 'Install Unzip'
+  become: yes 
+  command: sudo apt-get install -y unzip
+  register: out
+- debug: var=out.stdout_lines
+
+
+#guessing all files will be under ~/zip
+- name: Unarchive
+  unarchive:
+    src: /home/ubuntu/code.zip
+    dest: /home/ubuntu
+    remote_src: yes
+
+- name: example copying file with owner and permissions
+  copy:
+    src: /Users/liuyongkang/Desktop/project/venv/shell/upload.sh
+    dest: /home/ubuntu/upload.sh
+    owner: ubuntu
+    group: ubuntu
+    mode: 0644
+
+- name: 'Make the script runnable'
+  become: yes 
+  command: sudo chmod +x upload.sh
+  register: out
+- debug: var=out.stdout_lines
+
+- name: 'Run the script to install apache, harvest tweet, and analyse them, and upload AURIN data'
+  become: yes 
+  command: ./upload.sh
+  register: out
+- debug: var=out.stdout_lines

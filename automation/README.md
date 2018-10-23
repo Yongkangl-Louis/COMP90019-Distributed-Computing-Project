@@ -1,5 +1,5 @@
 ### Deployment
-The follows package need to preinstalled. <br>
+The follows package need to be preinstalled. <br>
 
 * ansible <br>
 * boto2 <br>

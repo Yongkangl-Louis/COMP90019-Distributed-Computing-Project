@@ -1,17 +1,17 @@
 ### Deployment
-The follows package need to preinstalled. <br>
+The follows package need to preinstalled. 
 
-* ansible <br>
-* boto2 <br>
-* python3 <br>
-* rpl: used to replaces strings with new strings in multiple text files. <br>
-(https://github.com/kcoyner/rpl) <br>
+* ansible
+* boto2 
+* python3 
+* rpl: used to replaces strings with new strings in multiple text files. 
+(https://github.com/kcoyner/rpl) 
 
-The security rules need to support ssh (port 22) and CouchDB (port 5984). <br>
+The security rules need to support ssh (port 22) and CouchDB (port 5984). 
 
-The private key and OpenStack user credential are needed. <br>
+The private key and OpenStack user credential are needed. 
  
-Use the command：<br>
-$ python start.py       <br>
+Use the command：
+$ python start.py       
 
-Two virtual machines will be set up, the IP address can be found in file “host”. <br>
+Two virtual machines will be set up, the IP address can be found in file “host”. 

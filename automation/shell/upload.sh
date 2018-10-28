@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#install and run the harvester, analyser, and put aurin data onto the DB
+#install and run the harvester, analyser.
 sudo apt-get update &> /dev/null
 sudo apt-get install -y vim &> /dev/null
 sudo apt-get -y install python-pip &> /dev/null
@@ -11,7 +11,7 @@ sudo pip install tweepy --quiet
 sudo pip install afinn --quiet
 echo "installed pakages for Harvester and analyser"
 
-echo "starting harvester and analyser deployment"
+echo "starting deployment"
 cd zip
 
 sudo nohup python -u /home/ubuntu/code/mostFollower.py &> followers.out&
@@ -34,7 +34,7 @@ echo "updating data to database"
 
 sudo nohup python -u /home/ubuntu/zip/view_creation3.py &> view_creation3.out&
 
-echo "done with apache restarting..."
+echo "done with restarting..."
 
 
 

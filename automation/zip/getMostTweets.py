@@ -11,7 +11,7 @@ import numpy as np
 import json
 import csv
 
-couch = couchdb.Server('http://user:password@115.146.85.196:5984/')
+couch = couchdb.Server('http://admin:password@115.146.85.196:5984/')
 data1 = couch['mosttweets']
 
 result = data1.view('toptweets/tweets')

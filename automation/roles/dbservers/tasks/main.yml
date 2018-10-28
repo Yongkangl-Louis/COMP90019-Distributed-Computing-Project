@@ -15,8 +15,7 @@
     path: /home/ubuntu/couchDB
     state: directory
     mode: 0755
-
-#in the actual script this will be vdc REMEMBER TO CHANGE THIS !!
+    
 - name: Create a ext4 filesystem on /dev/vdb and check disk blocks
   become: yes
   filesystem:
@@ -33,7 +32,7 @@
     state: mounted
 
 
-#install docker io
+#pull docker io
 - name: Update repositories cache and install docker.io package
   become: yes
   apt:
@@ -51,8 +50,7 @@
   register: out
 - debug: var=out.stdout_lines
 
-#the below is upload and run
-
+#to upload and run
 
 - name: COPY part one of shell script to every node
   copy:

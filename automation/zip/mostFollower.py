@@ -10,7 +10,7 @@ import sys
 import couchdb
 
 #connect to database
-database_server = 'http://user:password@115.146.85.196:5984/'
+database_server = 'http://admin:password@115.146.85.196:5984/'
 couch = couchdb.Server(database_server)
 
 database_name ='mostfollowers'

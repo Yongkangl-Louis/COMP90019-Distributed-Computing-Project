@@ -1,4 +1,4 @@
-#this script is for deploying the main node server: harvester, analyser, aurin data upload to couchDB cluster
+#this script is for deploying the main node server: harvester, analyser.
 
 - name: example copying file with owner and permissions
   copy:
@@ -15,7 +15,7 @@
 - debug: var=out.stdout_lines
 
 
-#guessing all files will be under ~/zip
+# put all file on ~/zip
 - name: Unarchive
   unarchive:
     src: /home/ubuntu/code.zip
@@ -36,7 +36,7 @@
   register: out
 - debug: var=out.stdout_lines
 
-- name: 'Run the script to install apache, harvest tweet, and analyse them, and upload AURIN data'
+- name: 'Run the script to analyse and harvest tweet, '
   become: yes 
   command: ./upload.sh
   register: out

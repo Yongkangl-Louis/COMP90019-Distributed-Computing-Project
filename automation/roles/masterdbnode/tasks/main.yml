@@ -1,4 +1,4 @@
-#this script is for deploying the main node server: harvester, analyser.
+#to deploy the main node server: harvester, analyser.
 
 - name: example copying file with owner and permissions
   copy:
@@ -36,7 +36,7 @@
   register: out
 - debug: var=out.stdout_lines
 
-- name: 'Run the script to analyse and harvest tweet, '
+- name: 'Run the script to analyse and harvest tweet'
   become: yes 
   command: ./upload.sh
   register: out

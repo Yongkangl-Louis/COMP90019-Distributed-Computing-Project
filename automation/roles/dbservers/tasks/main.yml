@@ -1,6 +1,5 @@
 
-#This script install couchdb, install the harvesting twitter.
-#Start couchdb and the harvesting_twitter service
+#This script install couchdb Start couchdb
 
 #try to run a script
 #- name: Transfer and execute a script.

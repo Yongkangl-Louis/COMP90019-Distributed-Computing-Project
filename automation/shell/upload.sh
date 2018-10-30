@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#install and run the harvester, analyser.
+#install.
 sudo apt-get update &> /dev/null
 sudo apt-get install -y vim &> /dev/null
 sudo apt-get -y install python-pip &> /dev/null

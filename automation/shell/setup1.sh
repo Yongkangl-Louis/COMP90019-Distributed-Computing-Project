@@ -15,7 +15,7 @@ echo "Creating ini file "
 touch /home/ubuntu/couchDB/etc/local.d/1.ini
 echo ""
 
-echo "changing ownership of the whole couchDB folder"
+echo "changing ownership of couchDB folder"
 sudo chown -R ubuntu:ubuntu /home/ubuntu/couchDB
 sudo chmod -R 777 /home/ubuntu/couchDB
 
